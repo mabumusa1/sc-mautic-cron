@@ -37,7 +37,7 @@ class GetSegmentsCommand extends ContainerAwareCommand
         $leadLists = $listModel->getEntities(
             [                
                 'orderBy'    => 'l.lastBuiltDate',
-                'orderByDir' => 'desc',
+                'orderByDir' => 'asc',
                 'iterator_mode' => true,
                 'limit' => 10
             ]
